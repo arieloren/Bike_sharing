@@ -4,7 +4,9 @@ from extract.extract_base import ExtractBase
 from extract.extract_file import ExtractFile
 from transform.transform_model import TransformModel
 from transform.transform_processing import TransformProcessing
-from load.load_predictions import LoadPredictions
+from load.load_prediction import LoadPredictions
+
+
 # from eval.model_evaluation import ModelEvaluation
 def main():
 
@@ -23,7 +25,7 @@ def main():
     # load
     print(result)
     # Save result with original data
-    saver = LoadPredictions(output_path="output/predictions.csv")
+    saver = LoadPredictions(config)
     saver.save_with_predictions(dataset, result)
 
 

@@ -10,4 +10,4 @@ model_casual = 'models/model_casual.pkl'
 model_registered = 'models/model_registered.pkl'
 
 # load
-RESULT_FILE_PATH = 'data/result.csv'
+RESULT_FILE_PATH = 'data/predictions.csv'

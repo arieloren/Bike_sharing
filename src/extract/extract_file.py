@@ -1,5 +1,5 @@
 import pandas as pd
-from extract.extract_base import ExtractBase
+from .extract_base import ExtractBase
 
 
 class ExtractFile(ExtractBase):
